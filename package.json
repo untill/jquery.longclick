@@ -10,8 +10,8 @@
     "click",
     "tap",
     "long",
-    "jquery",
-    "plugin",
+    "ecosystem:jquery",
+    "jquery-plugin",
     "javascript"
   ],
   "author": "Till Halbach",
