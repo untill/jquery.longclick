@@ -3,7 +3,7 @@
   <head>
     <meta charset=utf-8 />
     <title>jquery.longclick</title>
-    <meta http-equiv="X-UA-Compatible" content="Explorer=; Firefox=38; Safari=; Chrome=43; Opera=12; Konqeror=">
+    <meta http-equiv=X-UA-Compatible content="Explorer=; Firefox=38; Safari=; Chrome=43; Opera=12; Konqeror=">
   </head>
 
   <body>
@@ -14,10 +14,11 @@
     <button id=b1>Button 1</button>
     <button id=b2>Button 2</button>
 
-    <script type="text/javascript" src="thirdparty/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="plugin/jquery.longclick-1.0.min.js"></script>
-    <script type="text/javascript">
+    <script src=thirdparty/jquery-1.11.3.min.js></script>
+    <script src=plugin/jquery.longclick-1.0.min.js></script>
+    <script>
      $( document).ready( function() {
+       // page has finished loading, now allow long clicks
        $( 'button').mayTriggerLongClicks( {
 	 delay: 600
        } ).on( 'longClick', function() {
@@ -25,7 +26,7 @@
        } ).on( 'click', function() {
 	 $( '#msg').html( 'Short-clicked on button ' + $( this).attr( 'id') );
        } );
-     } );
+     } );  // .ready(
     </script>
 
   </body>
