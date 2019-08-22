@@ -2,7 +2,7 @@
   "name": "jquery.longclick",
   "version": "1.0.0",
   "description": "This jQuery plugin adds capability to long-click on selected elements, just as a long tap on, say, a mobile device.",
-  "main": "demo/demo.html",
+  "main": "plugin/jquery.longclick-1.0.js",
   "scripts": {
     "test": ""
   },
